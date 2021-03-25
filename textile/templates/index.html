@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        cursor: pointer;
+        margin-top: 3px;
+    }
+</style>
+<body>
+    <a href="https://www.youtube.com/watch?v=bO5UG_9ggYA">Best of Himesh reshmiya</a>
+    <form action="/removepunc" method="post"> {% csrf_token %}
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea name='text' class="form-control" id="ex" rows="10" cols="180"></textarea>
+        <br>
+        <input type="checkbox" name="removepunc1">Removepuncations  <br>
+        <input type="checkbox" name="uppercase">Uppercase  <br>  
+        <input type="checkbox" name="extraspace">RemoveextraSpace  <br>
+        <input type="checkbox" name="newline_remove">Newline_Remove <br>
+        <input type="checkbox" name="count">Count Letter  <br>
+        <button class="btn" type="submit">Check</button>
+    </form>
+</body>
+</html>
